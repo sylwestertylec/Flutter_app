@@ -64,8 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Text('+'),
-                  Text('RST'),
+                  ElevatedButton(
+                    onPressed: _incrementCounter,
+                    child: Text('+'),
+                  ),
+                  ElevatedButton(
+                    onPressed: _rst,
+                    child: Text('RST'),
+                  ),
                 ]),
           ],
         ),
