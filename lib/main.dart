@@ -61,18 +61,6 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-<<<<<<< HEAD
-            Row(children: <Widget>[
-              ElevatedButton(
-                onPressed: _incrementCounter,
-                child: Text('+'),
-              ),
-              ElevatedButton(
-                onPressed: _incrementCounter,
-                child: Text('RST'),
-              ),
-            ]),
-=======
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
@@ -85,7 +73,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text('RST'),
                   ),
                 ]),
->>>>>>> development
           ],
         ),
       ),
