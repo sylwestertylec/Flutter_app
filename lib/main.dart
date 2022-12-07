@@ -38,6 +38,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _rst() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
