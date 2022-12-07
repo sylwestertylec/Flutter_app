@@ -56,8 +56,14 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             Row(children: <Widget>[
-              Text('+'),
-              Text('RST'),
+              ElevatedButton(
+                onPressed: _incrementCounter,
+                child: Text('+'),
+              ),
+              ElevatedButton(
+                onPressed: _incrementCounter,
+                child: Text('RST'),
+              ),
             ]),
           ],
         ),
