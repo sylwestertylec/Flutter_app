@@ -38,6 +38,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _rst() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,6 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+<<<<<<< HEAD
             Row(children: <Widget>[
               ElevatedButton(
                 onPressed: _incrementCounter,
@@ -65,6 +72,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text('RST'),
               ),
             ]),
+=======
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: _incrementCounter,
+                    child: Text('+'),
+                  ),
+                  ElevatedButton(
+                    onPressed: _rst,
+                    child: Text('RST'),
+                  ),
+                ]),
+>>>>>>> development
           ],
         ),
       ),
