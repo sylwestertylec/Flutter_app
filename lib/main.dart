@@ -55,10 +55,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-            Row(children: <Widget>[
-              Text('+'),
-              Text('RST'),
-            ]),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text('+'),
+                  Text('RST'),
+                ]),
           ],
         ),
       ),
